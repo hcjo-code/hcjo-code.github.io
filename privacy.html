@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="덴탈맥스 자재관리 Dentalmaxsupplydepot의 Google Drive 데이터 접근, 사용, 저장, 공유, 보관 및 삭제에 관한 안내입니다.">
+  <title>개인정보처리방침 · Dentalmaxsupplydepot</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="덴탈맥스 자재관리 홈"><span class="mark" aria-hidden="true">D</span><span>덴탈맥스 자재관리<small>Dentalmaxsupplydepot</small></span></a>
+    <nav aria-label="주 메뉴"><a href="index.html">프로그램 소개</a><a href="privacy.html" aria-current="page">개인정보처리방침</a></nav>
+  </header>
+  <main id="main" class="policy wrap">
+    <div class="policy-heading"><p class="eyebrow">PRIVACY POLICY</p><h1>개인정보처리방침</h1><p class="policy-date">최종 수정: 2026년 10월 19일</p><p class="lead">덴탈맥스 자재관리 프로그램<br><strong>Dentalmaxsupplydepot</strong></p></div>
+    <div class="policy-body">
+      <p>덴탈맥스는 사내 부자재 재고관리 프로그램인 Dentalmaxsupplydepot(이하 “프로그램”)을 운영합니다. 이 방침은 창고용·관리자용 프로그램과 이 안내 웹사이트가 취급하는 정보, Google Drive 연결 목적, 정보의 저장·공유 및 삭제 방법을 설명합니다.</p>
+      <section><h2>1. 취급하는 정보와 이용 목적</h2>
+        <ul>
+          <li><strong>입출고 및 재고 정보:</strong> 품목 식별 정보, 공정, 입고·불출·초기 재고 구분, 수량, 업무 일자, 작성 시각, 작업자 이름과 메모를 취급합니다. 재고 반영, 이력 확인, 중복 처리 방지와 업무 대조에 사용합니다.</li>
+          <li><strong>기기 및 처리 정보:</strong> 프로그램이 생성한 기기·기록 식별자, 창고용·관리자용 역할, 중앙 처리 정보, 동기화 상태와 품목별 공정 배정 정보를 취급합니다. PC 간 기록을 구분하고 동기화 결과를 확인하는 데 사용합니다.</li>
+          <li><strong>사용자가 선택한 재고 파일:</strong> 초기 재고를 읽어 품목과 수량을 대조합니다. 등록한 기록에 원본 파일명, 시트명, 셀 위치, 파일 확인값 및 관련 수식 정보가 포함될 수 있습니다. 원본 엑셀 파일 전체를 자동으로 업로드하는 기능은 아닙니다.</li>
+          <li><strong>연결 설정 및 인증 정보:</strong> 사용자가 지정한 Drive 폴더 식별자, 공용 연결 키, OAuth 설정 파일 위치와 접근 토큰·갱신 토큰 등 Google이 발급한 인증 정보를 사용합니다. 승인받은 Google Drive 접근을 유지하고 기록의 무결성을 확인하는 데 필요합니다.</li>
+        </ul>
+        <p>작업자 이름은 프로그램에 입력한 값입니다. 프로그램은 Google 계정의 비밀번호를 입력받거나 저장하지 않습니다. 업무 메모에는 재고관리와 관련 없는 개인정보를 기재하지 않도록 합니다.</p>
+      </section>
+      <section><h2>2. Google Drive에 접근하는 범위</h2>
+        <p>현재 프로그램이 요청하는 OAuth 범위는 <code>https://www.googleapis.com/auth/drive</code>입니다. 이 권한은 로그인한 계정이 접근할 수 있는 Google Drive 파일을 조회·생성·수정·삭제할 수 있는 넓은 권한이며, Google의 권한 자체가 특정 폴더로 한정되는 것은 아닙니다.</p>
+        <p>프로그램의 재고 동기화는 운영자가 지정한 상위 폴더, 그 안의 <code>programlog</code> 전용 폴더, 프로그램 관리 표식이 있는 기록 파일을 대상으로 합니다. 폴더·파일의 식별자, 이름, 유형과 무결성 확인 정보 등을 조회하고, 재고 기록·처리 결과·품목 배정·재고 현황을 읽거나 작성합니다.</p>
+        <p>이전 버전에서 생성한 관리 파일을 전용 폴더로 옮길 수 있습니다. 기록을 묶음 파일로 정리할 때에는 대체 파일을 검증하고 원본을 로컬에 백업한 뒤 해당 원본 파일을 Drive 휴지통으로 옮길 수 있습니다. 묶음 정리는 거래 이력 전체를 삭제하는 기능이 아닙니다.</p>
+      </section>
+      <section><h2>3. 저장 위치와 보호 방식</h2>
+        <p>업무 기록, 설정, 인증 정보, 동기화 캐시, 오류 기록과 백업은 설치된 PC의 사용자 데이터 폴더에 저장됩니다. 오류 기록은 문제 원인을 확인하는 데 사용합니다. 공유가 필요한 재고 기록과 처리 결과는 설정한 Google Drive 폴더에도 저장됩니다. 사용자가 내보낸 엑셀·CSV 자료는 선택한 위치에 별도로 저장됩니다.</p>
+        <p>Google 인증과 Drive API 통신에는 HTTPS를 사용합니다. 전송 기록의 확인값과 공용 연결 키 기반 서명으로 변경 여부를 검사합니다. 이 무결성 검사는 저장된 기록을 암호화하는 기능과는 다릅니다.</p>
+        <p>현재 프로그램은 로컬 데이터 파일과 인증 파일을 자체적으로 암호화하지 않습니다. 해당 PC의 Windows 계정, 디스크 보안과 Google Drive 공유 권한을 통해 접근을 관리해야 합니다.</p>
+      </section>
+      <section><h2>4. 정보의 공유와 외부 서비스</h2>
+        <p>재고 기록은 같은 공유 폴더와 공용 연결 키를 사용하도록 설정된 업무용 PC에서 처리됩니다. Drive 폴더에 접근 권한이 있는 사용자와 PC 데이터에 접근할 수 있는 사용자도 저장된 자료에 접근할 수 있습니다. 운영자는 업무상 필요한 사람에게만 접근 권한을 부여합니다.</p>
+        <p>Google은 로그인과 Google Drive 저장·전송 기능을 제공합니다. 해당 서비스 이용에는 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>이 적용됩니다. 프로그램에는 별도 개발자 서버로 재고 기록을 자동 전송하는 기능이 없습니다.</p>
+        <p>이 프로그램은 Google 사용자 데이터를 광고, 판매 또는 범용 AI 모델 학습에 이용하지 않습니다. Google API로 받은 정보는 재고관리와 사용자가 승인한 동기화 기능에 사용하며, 해당 정보의 사용과 다른 앱으로의 전달에는 제한적 사용 요건을 포함한 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 서비스 사용자 데이터 정책</a>을 적용합니다.</p>
+      </section>
+      <section><h2>5. 보관과 삭제</h2>
+        <p>프로그램에는 일정 기간이 지나면 거래 이력·백업을 일괄 자동 삭제하는 기능이 없습니다. 재고 대조와 복구를 위해 로컬 기록, 공유 기록, 백업 및 내보낸 자료가 유지될 수 있습니다. 운영 담당자는 실제 업무상 필요성과 적용되는 보존 의무를 확인해 보관과 삭제를 관리합니다.</p>
+        <p>프로그램 실행 파일을 삭제하거나 Google 연결 권한을 철회하는 것만으로 기존 기록과 백업이 모두 삭제되지는 않습니다. 삭제가 필요하면 아래 문의처로 요청해 주세요. 운영 담당자가 요청자와 대상 자료를 확인한 후 관련 PC, Google Drive, 백업과 내보낸 사본을 함께 검토합니다. 업무상 보존이 필요한 자료나 다른 사람이 보관한 사본은 별도 확인이 필요합니다.</p>
+      </section>
+      <section><h2>6. Google 연결 철회와 정보 관련 요청</h2>
+        <p>사용자는 <a href="https://myaccount.google.com/connections">Google 계정의 서드 파티 연결 관리</a>에서 이 프로그램의 접근 권한을 철회할 수 있습니다. 권한을 철회하면 Google Drive 동기화를 계속하려면 다시 승인이 필요합니다. 기존에 PC와 Drive에 저장된 자료는 자동 삭제되지 않습니다.</p>
+        <p>본인과 관련된 정보의 열람·정정·삭제 또는 처리 제한이 필요하면 운영 담당자에게 요청할 수 있습니다. 재고 이력에 영향을 주는 변경은 기록의 일관성과 필요한 보존 범위를 함께 확인해 처리합니다.</p>
+      </section>
+      <section><h2>7. 이 안내 웹사이트</h2>
+        <p>이 웹사이트는 프로그램 소개와 개인정보처리방침을 제공하는 정적 페이지입니다. 별도의 회원가입, 재고 입력, 자체 분석 도구나 광고 추적 기능을 포함하지 않습니다.</p>
+        <p>호스팅 서비스인 GitHub Pages는 보안 목적으로 방문자의 IP 주소를 기록할 수 있습니다. 자세한 내용은 <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a>을 확인해 주세요.</p>
+      </section>
+      <section><h2>8. 문의처와 방침 변경</h2>
+        <p><strong>운영:</strong> 덴탈맥스 자재관리 운영 담당<br><strong>이메일:</strong> <a href="mailto:hcjo@hedent.co.kr">hcjo@hedent.co.kr</a></p>
+        <p>데이터 처리 방식이 변경되면 이 페이지의 내용과 수정일을 갱신합니다. 새로운 정보 이용이나 Google 권한 확대가 필요한 경우에는 필요한 안내와 동의 절차를 거칩니다.</p>
+      </section>
+      <a class="back-link" href="index.html">← 프로그램 소개로 돌아가기</a>
+    </div>
+  </main>
+  <footer class="site-footer wrap"><span>덴탈맥스 · Dentalmaxsupplydepot</span><a href="index.html">프로그램 소개</a></footer>
+</body>
+</html>
